@@ -1,0 +1,180 @@
+/* font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+/* color palette */
+:root {
+    --main-white: #f0f0f0;
+    --light-grey: #dee1dd;
+    --light-green: #c4cdc1;
+    --dark-green: #99aead;
+    --light-blue: #6d9197;
+    --greenie: #658b6f;
+    --bluie: #2f575d;
+    --blackx: #28363d;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  
+  /* navbar styling */
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 20px 0;
+    background: var(--dark-green);
+    box-shadow: 2px 1px 50px 10px var(--bluie);
+    
+  }
+  
+  .items {
+    list-style-type: none;
+    /* flex-basis: 8% */
+    margin-right: 20px;
+    
+  }
+  
+  .items > a {
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  .items > a:hover  {
+    font-size: 20px;
+    transition: font-size 0.3s 0.02s;
+  }
+  
+  /* welcome section styling */
+  
+  #welcome-section {
+    line-height: 1.5;
+    font-size: 1.22rem;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+   background-image:
+   linear-gradient(150deg, rgba(235,225,85,0.5) 0%, rgba(215,106,82,0.4) 56%), 
+   url("https://cdn.pixabay.com/photo/2016/11/24/20/30/architecture-1857175_1280.jpg");
+   background-clip: border-box;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: 'Roboto', 'sans-serif';
+   font-weight: 500; 
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    
+  }
+  
+  p {
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+
+  /* projects styling */
+
+  #projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+   
+  }
+  
+  .project-tile {
+    flex-basis: 10%;
+    height: 200px;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: 2px;
+  }
+
+  .project-tile > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .project-tile > a:hover {
+    transition: font-size 0.2s 0.03s ease-in;
+    font-size: 22px;
+    opacity: 0.9;
+  }
+
+  #projects2 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #projects2 > p {
+    line-height: 1.5;
+    letter-spacing: 2px;
+  }
+
+  #contact {
+    letter-spacing: 2px;
+    background: linear-gradient(150deg, #707a73 20%,  rgba(0,0,130,0.2) 75%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    box-shadow: 5px -0.5px 1px 1px var(--main-white);
+  }
+
+  #contact > ul > li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+  }
+
+  #contact > ul > li > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #contact > ul > li > a:hover >i:hover {
+    font-size: 30px;
+    transition: font-size 0.2s 0.02s ease-in-out;
+  }
+
+  .container {
+    background: linear-gradient(62deg,var(--light-grey) 0%, #658b6f 100%);
+    box-shadow: 5px -4px 10px 5px rgba(215,106,82,0.3);
+  }
